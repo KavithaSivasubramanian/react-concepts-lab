@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Click(){
+           var task = new Promise((resolve,reject)=>{
+            resolve("task 2")});
+            task.then(msg=>console.log(msg));
+       
+           console.log("task 1");
+           setTimeout(()=>console.log("task 3"),1000);
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="Click()">Click Me</button>
+</body>
+</html>

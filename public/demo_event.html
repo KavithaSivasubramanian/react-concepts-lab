@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function productDetails(obj,e,...product){
+            console.log(obj.name);
+            console.log(e.clientX);
+            console.log(product);
+        }
+        function NavClick(){
+            alert("Nav clicked");
+        }
+        function SearchClick(e){
+            e.stopPropagation();
+            alert("Search clicked");
+        }
+         function SubmitAction(e){
+            e.preventDefault();
+            alert("form submitted");
+        } 
+    </script>
+</head>
+<body>
+    <button name="btn" onclick="productDetails(this,event,1,'TV',45000,['Delhi','Chennai'],{rating:4.5})">Product</button>
+    <nav style="border: 1px solid black; padding: 10px;" onclick="NavClick()">
+        <h3>Amazon</h3>
+        <button onclick="SearchClick(event)">Search</button>
+    </nav>
+    <form onsubmit="SubmitAction(event)">
+        <input type="text" name="user" required/>
+                <button>Submit</button>
+
+    </form>
+</body>
+</html>

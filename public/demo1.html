@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* function InsertClick(){
+            document.write("Inserted");
+        } */
+
+       /*  function loadBody(){  
+            document.querySelector("button").addEventListener("click",()=>{document.write("Inserted");})
+        } */
+
+        function loadBody(){
+            var button = document.createElement("button");
+            button.innerHTML = "Insert";
+            button.name = "insert";
+            button.id = "btn_insert";
+            //button.addEventListener("click",()=> {document.write("Record Inserted")})
+            button.addEventListener("click",function(e){
+                console.log(`${e.clientX}\n${e.ctrlKey}\n${e.target.name}`);
+            })
+            document.querySelector("body").appendChild(button);
+
+        }
+
+    </script>
+</head>
+<body onload="loadBody()">
+    <!-- <button onclick="InsertClick()">Insert</button>  -->
+    <!-- <button>Insert</button>  -->
+</body>
+</html>
