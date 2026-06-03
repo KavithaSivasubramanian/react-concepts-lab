@@ -23,9 +23,10 @@ import { CarouselDemo } from './components/carousel-demo.jsx/carousel-demo'
 import { FormDemo } from './components/form-demo/form-demo'
 import { FormikComponentDemo } from './components/formik-component-demo.jsx/formik-component-demo'
 import { HookFormDemo } from './components/hook-form-demo/hook-form-demo'
+import { ControlledDemo } from './components/controlled-demo/controlled-demo'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HookFormDemo/>
+    <ControlledDemo/>
   </StrictMode>,
 )
  
