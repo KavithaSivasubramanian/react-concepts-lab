@@ -5,8 +5,20 @@ export function DataGrid(props){
             <caption>{props.caption}</caption>
             <thead>
             {
-                Object.keys(props.data[0]).map(field=><th key={field}>{field}</th>)
+                Object.keys(props.data[0]).map(field=><th key={field}>{field}
+                <span className="dropdown">
+                  <button className="dropdown-toggle btn bi bi-three-dots-vertical" data-bs-toggle="dropdown
+                  "></button>
+                  <ul className="dropdown-menu">
+                    <li className="dropdown-item"><span className="bi bi-funnel"></span>Filter</li>
+                    <li className="dropdown-item"><span className="bi bi-sort-alpha-down"></span>Sort Ascending</li>
+                    <li className="dropdown-item"><span className="bi bi-sort-alpha-up"></span>Sort Descending</li>
+                  </ul>
+                </span>
+                
+                </th>)
             }
+            <th>Actions</th>
             </thead>
             <tbody>
                 {
@@ -18,9 +30,17 @@ export function DataGrid(props){
                             }
                         </td>)
                     }
+                    <td>
+                    <button className="btn btn-danger bi bi-trash"></button>
+                    <button className="btn btn-warning bi bi-pen mx-2"></button>
+                    </td>
                     </tr>)
+                    
                 }
+                
+                
 
+                    
             </tbody>
 
          </table>

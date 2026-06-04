@@ -17,8 +17,8 @@ export function ControlledDemo(){
     ]);
     return(
         <div className="container-fluid">
-         <DataGrid theme="table-warning" caption="Employee Details" data={employee}/>
-         <DataGrid theme="table-success" caption="Products Details" data={products}/>
+         <DataGrid theme={'table-warning'} caption="Employee Details" data={employee}/>
+         <DataGrid theme={'table-success'} caption="Products Details" data={products}/>
 
         </div>
     )
