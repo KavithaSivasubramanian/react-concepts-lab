@@ -15,10 +15,11 @@ export function ControlledDemo(){
         {Name:"TV",id:3},
         
     ]);
+    const [layout] = useState("card");
     return(
         <div className="container-fluid">
-         <DataGrid theme={'table-warning'} caption="Employee Details" data={employee}/>
-         <DataGrid theme={'table-success'} caption="Products Details" data={products}/>
+         <DataGrid theme={'table-warning'} caption="Employee Details" data={employee} layout={layout}/>
+         <DataGrid theme={'table-success'} caption="Products Details" data={products} layout={layout}/>
 
         </div>
     )

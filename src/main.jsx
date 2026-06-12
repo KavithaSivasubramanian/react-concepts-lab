@@ -25,9 +25,10 @@ import { FormikComponentDemo } from './components/formik-component-demo.jsx/form
 import { HookFormDemo } from './components/hook-form-demo/hook-form-demo'
 import { ControlledDemo } from './components/controlled-demo/controlled-demo'
 import { ConditionDemo } from './components/condition-demo/condition-demo'
+import { ConditionalComponentDemo } from './components/condition-demo1/condition-demo1'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ConditionDemo/>
+    <ControlledDemo/>
   </StrictMode>,
 )
  
