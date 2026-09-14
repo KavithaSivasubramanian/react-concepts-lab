@@ -28,9 +28,12 @@ import { ConditionDemo } from './components/condition-demo/condition-demo'
 import { ConditionalComponentDemo } from './components/condition-demo1/condition-demo1'
 import { Fakestore } from './components/fakestore/fakestore'
 import { ContextDemo } from './components/context-demo/context-demo'
+import { TransportDemo } from './components/transport-demo/transport-demo'
+import { SearchProducts } from './fakestore/search-products'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContextDemo/>
+    <SearchProducts/>
   </StrictMode>,
 )
  
