@@ -31,10 +31,11 @@ import { ContextDemo } from './components/context-demo/context-demo'
 import { TransportDemo } from './components/transport-demo/transport-demo'
 import { SearchProducts } from './fakestore/search-products'
 import { LifecycleDemo } from './components/lifecycle-demo/lifecycle-demo'
+import { TutorialDemo } from './video-tutorials/tutorial-index'
 
 createRoot(document.getElementById('root')).render(
  
-    <LifecycleDemo/>
+    <TutorialDemo/>
  
 )
  
